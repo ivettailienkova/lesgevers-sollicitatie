@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solliciteer als lesgever - Het Studentje</title>
+<style>
+  :root{ --green:#30725a; --yellow:#ffff24; --ink:#1a1a1a; }
+  *{ box-sizing:border-box; }
+  body{ font-family:Helvetica,Arial,sans-serif; color:var(--ink); max-width:640px; margin:0 auto; padding:40px 24px 80px; line-height:1.5; }
+  h1{ font-size:28px; margin:0 0 6px; text-transform:uppercase; letter-spacing:0.02em; }
+  p.lead{ font-size:16px; color:#444; margin:0 0 32px; max-width:60ch; }
+  .accent{ background:var(--yellow); padding:0 4px; }
+  label{ display:block; font-weight:bold; font-size:14px; margin:28px 0 8px; }
+  .hint{ font-weight:normal; color:#666; font-size:13px; }
+  input[type=text], input[type=tel], input[type=email], textarea{
+    width:100%; padding:10px 0; border:none; border-bottom:1px solid #bbb; font-size:16px;
+    font-family:inherit; background:transparent;
+  }
+  input:focus, textarea:focus{ outline:none; border-bottom:1px solid var(--green); }
+  textarea{ resize:vertical; min-height:70px; }
+  fieldset{ border:none; padding:0; margin:28px 0 0; }
+  .row{ display:flex; align-items:center; gap:8px; margin:6px 0; font-size:15px; }
+  .row input{ width:auto; }
+  button{
+    margin-top:40px; background:var(--green); color:#fff; border:none; padding:14px 28px;
+    font-size:16px; font-weight:bold; border-radius:999px; cursor:pointer; text-transform:uppercase;
+    letter-spacing:0.02em;
+  }
+  button:hover{ opacity:0.9; }
+  .foot{ margin-top:40px; font-size:13px; color:#888; }
+</style>
+</head>
+<body>
+  <h1>Solliciteer als <span class="accent">lesgever</span></h1>
+  <p class="lead">Het Studentje zoekt lesgevers voor bijna alle vakken, lager en secundair onderwijs, in Gent. Dit formulier duurt 2 minuten. Komt het goed uit, dan sturen we je een uitgebreider vervolgformulier.</p>
+
+  <form action="https://formsubmit.co/info@hetstudentje.be" method="POST">
+    <input type="hidden" name="_subject" value="Nieuwe sollicitatie lesgever - Het Studentje">
+    <input type="hidden" name="_next" value="https://ivettailienkova.github.io/lesgevers-sollicitatie/bedankt.html">
+    <input type="hidden" name="_captcha" value="true">
+    <input type="text" name="_honey" style="display:none">
+
+    <label>Naam</label>
+    <input type="text" name="Naam" required>
+
+    <label>Telefoonnummer of e-mail</label>
+    <input type="text" name="Contact" required>
+
+    <label>Universiteit of hogeschool + opleiding</label>
+    <input type="text" name="Opleiding" placeholder="Bv. UGent, burgerlijk ingenieur, 2e jaar" required>
+
+    <fieldset>
+      <label>Welke vakken kan je geven? <span class="hint">(meerdere mogelijk)</span></label>
+      <div class="row"><input type="checkbox" name="Vakken" value="Wiskunde"> <label style="margin:0;font-weight:normal">Wiskunde</label></div>
+      <div class="row"><input type="checkbox" name="Vakken" value="Wetenschappen (fysica/chemie)"> <label style="margin:0;font-weight:normal">Wetenschappen (fysica/chemie)</label></div>
+      <div class="row"><input type="checkbox" name="Vakken" value="Nederlands"> <label style="margin:0;font-weight:normal">Nederlands</label></div>
+      <div class="row"><input type="checkbox" name="Vakken" value="Frans"> <label style="margin:0;font-weight:normal">Frans</label></div>
+      <div class="row"><input type="checkbox" name="Vakken" value="Engels"> <label style="margin:0;font-weight:normal">Engels</label></div>
+      <div class="row"><input type="checkbox" name="Vakken" value="Russisch"> <label style="margin:0;font-weight:normal">Russisch</label></div>
+      <div class="row"><input type="checkbox" name="Vakken" value="Studiebegeleiding"> <label style="margin:0;font-weight:normal">Studiebegeleiding</label></div>
+      <div class="row"><input type="checkbox" name="Vakken" value="Ander vak"> <label style="margin:0;font-weight:normal">Ander vak</label></div>
+    </fieldset>
+
+    <label>Hoeveel ervaring heb je met bijles geven of lesgeven? <span class="hint">(kort)</span></label>
+    <textarea name="Ervaring" required></textarea>
+
+    <label>Wanneer kan je lesgeven? <span class="hint">(dagen/uren, bv. "ma en wo avond, weekend")</span></label>
+    <input type="text" name="Beschikbaarheid" required>
+
+    <button type="submit">Versturen</button>
+  </form>
+
+  <p class="foot">Het Studentje, Ossenstraat 89, 9000 Gent &middot; www.hetstudentje.be</p>
+</body>
+</html>
