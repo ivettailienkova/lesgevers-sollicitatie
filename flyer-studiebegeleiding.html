@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<title>Lesgevers gezocht - studiebegeleiding</title>
+<style>
+  @page { size: A4; margin: 0; }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; }
+  body{ font-family:Helvetica,Arial,sans-serif; color:#1a1a1a; }
+
+  .page{ width:210mm; height:297mm; padding:18mm 16mm 14mm; position:relative; background:#ffffff; }
+
+  .kicker{
+    font-size:11pt; letter-spacing:0.12em; text-transform:uppercase; color:#555;
+    border-bottom:1px solid #1a1a1a; padding-bottom:6mm; margin-bottom:10mm;
+    display:flex; justify-content:space-between;
+  }
+
+  h1{ font-size:52pt; line-height:1.03; text-transform:uppercase; font-weight:800; margin:0 0 4mm; letter-spacing:-0.01em; }
+  h1 .hl{ background:#ffff24; padding:0 3mm; }
+
+  .sub{ font-size:16pt; font-weight:400; color:#1a1a1a; margin:0 0 10mm; max-width:85%; }
+  .sub b{ font-weight:700; }
+
+  .lead{ font-size:12.5pt; line-height:1.6; max-width:62ch; margin:0 0 10mm; color:#2a2a2a; }
+  .lead b{ font-weight:700; }
+
+  .deflist{ border-top:1px solid #1a1a1a; margin-bottom:10mm; }
+  .drow{ display:flex; border-bottom:1px solid #ccc; padding:4.5mm 0; }
+  .drow .lbl{ width:42mm; font-size:10.5pt; font-weight:700; text-transform:uppercase; letter-spacing:0.04em; color:#30725a; }
+  .drow .val{ font-size:13pt; flex:1; }
+  .drow .val b{ font-weight:700; }
+
+  .cta{ display:flex; align-items:flex-start; gap:10mm; margin-top:4mm; }
+  .cta-text{ flex:1; }
+  .cta-text .ctatitle{ font-size:18pt; font-weight:800; text-transform:uppercase; margin:0 0 3mm; }
+  .cta-text p{ font-size:12pt; margin:0 0 3mm; line-height:1.5; }
+  .cta-text .link{ font-size:12pt; font-weight:700; text-decoration:underline; color:#30725a; }
+  .cta-text .phoneline{ font-size:11.5pt; margin-top:4mm; color:#333; }
+  .cta-text .phoneline b{ color:#1a1a1a; }
+
+  .qr{ width:34mm; height:34mm; flex-shrink:0; }
+  .qr img{ width:100%; height:100%; display:block; }
+  .qr-cap{ font-size:8pt; text-align:center; color:#666; margin-top:2mm; width:34mm; }
+
+  .footer{ position:absolute; bottom:14mm; left:16mm; right:16mm; border-top:1px solid #1a1a1a; padding-top:5mm; display:flex; justify-content:space-between; align-items:baseline; }
+  .wordmark{ font-size:15pt; font-weight:800; }
+  .wordmark .y{ background:#ffff24; padding:0 1.5mm; }
+  .addr{ font-size:10pt; color:#555; text-align:right; }
+</style>
+</head>
+<body>
+<div class="page" data-document-role="page" data-label="Lesgevers gezocht - studiebegeleiding">
+
+  <div class="kicker"><span>HET STUDENTJE &middot; BIJLESBUREAU GENT</span><span>LESGEVERS GEZOCHT</span></div>
+
+  <h1>HELP ANDEREN<br>STUDEREN</h1>
+  <p class="sub"><b>Word studiebegeleider</b> bij Het Studentje.</p>
+
+  <p class="lead"><b>Goed in plannen, structureren en motiveren?</b> Het Studentje in Gent zoekt studiebegeleiders voor leerlingen die vastlopen in planning, aandacht of studiemethode. Je geeft structuur, geen stof.</p>
+
+  <div class="deflist">
+    <div class="drow"><div class="lbl">Waar</div><div class="val">In Gent, bij de leerling thuis of online.</div></div>
+    <div class="drow"><div class="lbl">Wanneer</div><div class="val"><b>Jij kiest je eigen uren.</b></div></div>
+    <div class="drow"><div class="lbl">Verdien</div><div class="val"><b>€20 per uur.</b></div></div>
+    <div class="drow"><div class="lbl">Voor wie</div><div class="val">Studenten hoger onderwijs en afgestudeerden met geduld en structuur.</div></div>
+  </div>
+
+  <div class="cta">
+    <div class="cta-text">
+      <p class="ctatitle">Solliciteer in 2 minuten</p>
+      <p>Scan de QR-code of ga naar</p>
+      <p class="link">ivettailienkova.github.io/lesgevers-sollicitatie</p>
+      <p class="phoneline">Liever eerst even praten? Stuur een berichtje voor een kennismaking: <b>0485 53 17 09</b></p>
+    </div>
+    <div>
+      <div class="qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=500x500&margin=10&data=https%3A%2F%2Fivettailienkova.github.io%2Flesgevers-sollicitatie%2F" alt="QR-code solliciteren"></div>
+      <div class="qr-cap">Scan &amp; solliciteer</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="wordmark">het <span class="y">studentje</span></div>
+    <div class="addr">Ossenstraat 89, 9000 Gent &middot; www.hetstudentje.be</div>
+  </div>
+
+</div>
+</body>
+</html>
